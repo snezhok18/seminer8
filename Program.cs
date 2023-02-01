@@ -12,8 +12,76 @@
 // 8 4 4 2
 
 
+// Создать и распечатать двумерный массив со случайными целыми числами
 
 
+// // Console.Write("Bведите количество строк массива: ");
+// // int rows = int.Parse(Console.ReadLine()!);
+// int rows = new Random().Next(2, 7);
+// // Console.Write("Введите количество столбцов массива: ");
+// // int columns = int.Parse(Console.ReadLine()!);
+// int columns = new Random().Next(2, 7);
+// Console.WriteLine($"В массиве {rows} и {columns} столбцов:");
+
+// Console.WriteLine();
+
+// int[,] array = GetArray(rows, columns);
+
+// PrintArray(array);
+// Console.WriteLine();
+// SortArray(array);
+// PrintArray(array);
+
+
+// int[,] GetArray(int m, int n)
+// {
+//     int[,] result = new int[m, n];
+
+//     for (int i = 0; i < m; i++)
+//     {
+//         for (int j = 0; j < n; j++)
+//         {
+//             result[i, j] = new Random().Next(25);
+//         }
+//     }
+//     return result;
+// }
+
+// void PrintArray(int[,] inArray)
+// {
+//     for (int i = 0; i < inArray.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < inArray.GetLength(1); j++)
+//         {
+//             Console.Write($"{inArray[i, j]} ");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+// }
+
+// // Метод сортировки двумерного массива по убыванию элементов (в строках)
+
+// void SortArray(int[,] MyArray)
+// {
+//     int[,] result = new int[rows, columns];
+
+//     for (int i = 0; i < MyArray.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < MyArray.GetLength(1); j++)
+//         {
+//             for (int t = j + 1; t < MyArray.GetLength(1); t++)
+//             {
+//                 if (MyArray[i, j] < MyArray[i, j + 1])
+//                 {
+//                     int temp = array[i, j];
+//                     MyArray[i, j] = MyArray[i, j + 1];
+//                     MyArray[i, j + 1] = temp;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 // Задача 56: Задайте прямоугольный двумерный массив. 
 // Напишите программу, которая будет находить строку 
